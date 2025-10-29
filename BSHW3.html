@@ -8,26 +8,37 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <title>Students dashboard</title>
+   <title>course progress dashboard</title>
 </head>
-<body style="background-color: rgba(242, 217, 179, 0.84)">
-   <ul class = "breadcrumb">
+<body style="text-align:center;">
+      <ul class = "breadcrumb">
       <li class = "breadcrumb-item"><a href = "https://www.mashupstack.com">Home</a></li>
-      <li class = "breadcrumb-item"><a href="https://www.mashupstack.com/list-courses">Mashupstack</a></li>
-      <li class = "breadcrumb-item active" aria-current = "page">Student Dashboard</li>
+      <li class = "breadcrumb-item"><a href="https://www.mashupstack.com/list-courses">Courses</a></li>
+      <li class = "breadcrumb-item active" aria-current = "page"> Web Development</li>
 </ul>
-<button type = "button" class = "btn btn-outline-secondary" style="margin-left:9px;">Start New Course</button>
+<h3>Web Development Course <span class = "badge badge-primary">NEW</span></h3>
 
-<button type = "button" class = "btn btn-info">
-        My Progress<span class = "badge badge-light">3</span>
-</button><br><br>
+<div class="progress" style="height:20px;">
+      <div class=" progress-bar progress-bar-striped bg-success" style="width:100%;height:20px">HTML</div>
+</div><br>
+      <div class="progress" style="height:20px;">
+     <div class=" progress-bar progress-bar-striped progress-bar-animatedbg-primary" style="width:75%">CSS</div>
+</div><br>
+<div class="progress" style="height:20px;">
+     <div class="progress-bar bg-warning" style="width:50%; height:20px">JAVASCRIPT</div>
+</div><br>
+<div class="progress"  style="height:20px;">
+     <div class="progress-bar bg-danger" style="width:25%; height:20px">BOOTSTRAP</div>
+</div><br>
 
-<div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%" >70%</div>
-</div><br><br>
-<ul class="pagination">
-  <li class="page-item "><a class="page-link" href="#">1</a></li>
-  <li class="page-item active"><a class="page-link" href="#">2</a></li>
-  <li class="page-item"><a class="page-link" href="#">3</a></li>
+<button type = "button" class = "btn btn-info">Start </button>
+<button type = "button" class = "btn btn-dark">Pause </button>
+<button type = "button" class = "btn btn-light">Reset</button><br><br>
+
+<ul class="pagination justify-content-center">
+  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
 </ul>
 </body>
 </html>
